@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sliding Wardrobe Customer Support</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="chat-container">
+      <header class="chat-header">
+        <h1>Sliding Wardrobe Support</h1>
+
+        <p class="support-status">
+          <span class="status-dot"></span>
+          Support Assistant Online
+        </p>
+
+        <button type="button" id="clearChatButton">Clear Chat</button>
+      </header>
+
+      <main class="chat-messages" id="chatMessages">
+        <div class="message bot-message">
+          <span>
+            Hello! 👋 Welcome to Sliding Wardrobe Support.
+            <br /><br />
+            I'm here to help you with:
+            <br />
+            • Pricing and quotations
+            <br />
+            • Delivery information
+            <br />
+            • Installation enquiries
+            <br />
+            • Wardrobe care and maintenance
+            <br /><br />
+            What would you like to know today?
+          </span>
+        </div>
+      </main>
+
+      <div class="quick-questions">
+        <button
+          type="button"
+          class="quick-question"
+          data-question="What is the price?"
+        >
+          Price
+        </button>
+
+        <button
+          type="button"
+          class="quick-question"
+          data-question="How long does delivery take?"
+        >
+          Delivery
+        </button>
+
+        <button
+          type="button"
+          class="quick-question"
+          data-question="Do you provide installation?"
+        >
+          Installation
+        </button>
+
+        <button
+          type="button"
+          class="quick-question"
+          data-question="How do I clean my wardrobe?"
+        >
+          Care Tips
+        </button>
+      </div>
+
+      <form class="chat-input-area" id="chatForm">
+        <input
+          type="text"
+          id="userInput"
+          placeholder="Type your question..."
+          aria-label="Type your customer support question"
+        />
+
+        <button type="submit" id="sendButton">Send</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
